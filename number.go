@@ -72,3 +72,32 @@ func checkRange(min, max int) {
 		panic("min must be less than max")
 	}
 }
+
+// Float32 generates a random float32 between 0.0 (inclusive) and 1.0 (exclusive).
+func (nr *Randomizer) Float32() float32 {
+	return nr.Rand.Float32()
+}
+
+// Float32InRange generates a random float32 between min (inclusive) and max (exclusive).
+func (nr *Randomizer) Float32InRange(min, max float32) float32 {
+	checkFloatRange(float64(min), float64(max))
+	return float32(nr.Rand.Float64())*(max-min) + min
+}
+
+// Float64 generates a random float64 between 0.0 (inclusive) and 1.0 (exclusive).
+func (nr *Randomizer) Float64() float64 {
+	return nr.Rand.Float64()
+}
+
+// Float64InRange generates a random float64 between min (inclusive) and max (exclusive).
+func (nr *Randomizer) Float64InRange(min, max float64) float64 {
+	checkFloatRange(min, max)
+	return nr.Rand.Float64()*(max-min) + min
+}
+
+// checkFloatRange ensures that min is less than max; otherwise, it panics.
+func checkFloatRange(min, max float64) {
+	if min >= max {
+		panic("min must be less than max")
+	}
+}
