@@ -102,8 +102,8 @@ func checkFloatRange(min, max float64) {
 	}
 }
 
-// PositiveOrNegative generates a random value of -1 or 1.
-func (nr *Randomizer) PositiveOrNegative() int {
+// RandomPlusOrMinusOne generates a random value of -1 or 1.
+func (nr *Randomizer) RandomPlusOrMinusOne() int {
 	if nr.Rand.Intn(2) == 0 {
 		return -1
 	}
