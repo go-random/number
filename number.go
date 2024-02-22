@@ -101,3 +101,11 @@ func checkFloatRange(min, max float64) {
 		panic("min must be less than max")
 	}
 }
+
+// PositiveOrNegative generates a random value of -1 or 1.
+func (nr *Randomizer) PositiveOrNegative() int {
+	if nr.Rand.Intn(2) == 0 {
+		return -1
+	}
+	return 1
+}
