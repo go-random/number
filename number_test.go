@@ -29,7 +29,7 @@ func TestIntInRange(t *testing.T) {
 	assert.Less(t, randomNumber, max, "randomized signed integer should be less than max")
 }
 
-func TestIntTypeCheck(t *testing.T) {
+func TestInt_TypeCheck(t *testing.T) {
 	// Setup
 	randomizer := number.NewRandomizer()
 	randomNumber := randomizer.Int()
@@ -39,7 +39,7 @@ func TestIntTypeCheck(t *testing.T) {
 	assert.Equal(t, "int", randomNumberType.Name(), "randomized signed integer should be of type int")
 }
 
-func TestIntWithSeed(t *testing.T) {
+func TestInt_WithSeed(t *testing.T) {
 	// Setup
 	seed := int64(31 * 41 * 53)
 	randomizer := number.NewRandomizerWithSeed(seed)
@@ -49,7 +49,7 @@ func TestIntWithSeed(t *testing.T) {
 	assert.NotEqual(t, 0, randomNumber, "randomized signed integer should not be 0")
 }
 
-func TestIntInRangeWithSeed(t *testing.T) {
+func TestIntInRange_WithSeed(t *testing.T) {
 	// Setup
 	seed := int64(31 * 41 * 53)
 	randomizer := number.NewRandomizerWithSeed(seed)
@@ -62,7 +62,7 @@ func TestIntInRangeWithSeed(t *testing.T) {
 	assert.Less(t, randomNumber, max, "randomized signed integer should be less than max")
 }
 
-func TestIntTypeCheckWithSeed(t *testing.T) {
+func TestInt_TypeCheck_WithSeed(t *testing.T) {
 	// Setup
 	seed := int64(31 * 41 * 53)
 	randomizer := number.NewRandomizerWithSeed(seed)
@@ -94,7 +94,7 @@ func TestInt32InRange(t *testing.T) {
 	assert.Less(t, randomNumber, max, "randomized signed integer should be less than max")
 }
 
-func TestInt32TypeCheck(t *testing.T) {
+func TestInt32_TypeCheck(t *testing.T) {
 	// Setup
 	randomizer := number.NewRandomizer()
 	randomNumber := randomizer.Int32()
@@ -104,7 +104,7 @@ func TestInt32TypeCheck(t *testing.T) {
 	assert.Equal(t, "int32", randomNumberType.Name(), "randomized signed integer should be of type int32")
 }
 
-func TestInt32WithSeed(t *testing.T) {
+func TestInt32_WithSeed(t *testing.T) {
 	// Setup
 	seed := int64(31 * 41 * 53)
 	randomizer := number.NewRandomizerWithSeed(seed)
@@ -114,7 +114,7 @@ func TestInt32WithSeed(t *testing.T) {
 	assert.NotEqual(t, 0, randomNumber, "randomized signed integer should not be 0")
 }
 
-func TestInt32InRangeWithSeed(t *testing.T) {
+func TestInt32InRange_WithSeed(t *testing.T) {
 	// Setup
 	seed := int64(31 * 41 * 53)
 	randomizer := number.NewRandomizerWithSeed(seed)
@@ -127,7 +127,7 @@ func TestInt32InRangeWithSeed(t *testing.T) {
 	assert.Less(t, randomNumber, max, "randomized signed integer should be less than max")
 }
 
-func TestInt32TypeCheckWithSeed(t *testing.T) {
+func TestInt32_TypeCheck_WithSeed(t *testing.T) {
 	// Setup
 	seed := int64(31 * 41 * 53)
 	randomizer := number.NewRandomizerWithSeed(seed)
@@ -159,7 +159,7 @@ func TestInt64InRange(t *testing.T) {
 	assert.Less(t, randomNumber, max, "randomized signed integer should be less than max")
 }
 
-func TestInt64TypeCheck(t *testing.T) {
+func TestInt64_TypeCheck(t *testing.T) {
 	// Setup
 	randomizer := number.NewRandomizer()
 	randomNumber := randomizer.Int64()
@@ -169,7 +169,7 @@ func TestInt64TypeCheck(t *testing.T) {
 	assert.Equal(t, "int64", randomNumberType.Name(), "randomized signed integer should be of type int64")
 }
 
-func TestInt64WithSeed(t *testing.T) {
+func TestInt64_WithSeed(t *testing.T) {
 	// Setup
 	seed := int64(31 * 41 * 53)
 	randomizer := number.NewRandomizerWithSeed(seed)
@@ -179,7 +179,7 @@ func TestInt64WithSeed(t *testing.T) {
 	assert.NotEqual(t, 0, randomNumber, "randomized signed integer should not be 0")
 }
 
-func TestInt64InRangeWithSeed(t *testing.T) {
+func TestInt64InRange_WithSeed(t *testing.T) {
 	// Setup
 	seed := int64(31 * 41 * 53)
 	randomizer := number.NewRandomizerWithSeed(seed)
@@ -192,7 +192,7 @@ func TestInt64InRangeWithSeed(t *testing.T) {
 	assert.Less(t, randomNumber, max, "randomized signed integer should be less than max")
 }
 
-func TestInt64TypeCheckWithSeed(t *testing.T) {
+func TestInt64_TypeCheck_WithSeed(t *testing.T) {
 	// Setup
 	seed := int64(31 * 41 * 53)
 	randomizer := number.NewRandomizerWithSeed(seed)
@@ -224,7 +224,7 @@ func TestUIntInRange(t *testing.T) {
 	assert.Less(t, randomNumber, max, "randomized unsigned integer should be less than max")
 }
 
-func TestUIntTypeCheck(t *testing.T) {
+func TestUInt_TypeCheck(t *testing.T) {
 	// Setup
 	randomizer := number.NewRandomizer()
 	randomNumber := randomizer.UInt()
@@ -234,7 +234,7 @@ func TestUIntTypeCheck(t *testing.T) {
 	assert.Equal(t, "uint", randomNumberType.Name(), "randomized unsigned integer should be of type uint")
 }
 
-func TestUIntWithSeed(t *testing.T) {
+func TestUInt_WithSeed(t *testing.T) {
 	// Setup
 	seed := int64(31 * 41 * 53)
 	randomizer := number.NewRandomizerWithSeed(seed)
@@ -244,7 +244,7 @@ func TestUIntWithSeed(t *testing.T) {
 	assert.NotEqual(t, 0, randomNumber, "randomized unsigned integer should not be 0")
 }
 
-func TestUIntInRangeWithSeed(t *testing.T) {
+func TestUIntInRange_WithSeed(t *testing.T) {
 	// Setup
 	seed := int64(31 * 41 * 53)
 	randomizer := number.NewRandomizerWithSeed(seed)
@@ -257,7 +257,7 @@ func TestUIntInRangeWithSeed(t *testing.T) {
 	assert.Less(t, randomNumber, max, "randomized unsigned integer should be less than max")
 }
 
-func TestUIntTypeCheckWithSeed(t *testing.T) {
+func TestUInt_TypeCheck_WithSeed(t *testing.T) {
 	// Setup
 	seed := int64(31 * 41 * 53)
 	randomizer := number.NewRandomizerWithSeed(seed)
@@ -289,7 +289,7 @@ func TestUInt32InRange(t *testing.T) {
 	assert.Less(t, randomNumber, max, "randomized unsigned integer should be less than max")
 }
 
-func TestUInt32TypeCheck(t *testing.T) {
+func TestUInt32_TypeCheck(t *testing.T) {
 	// Setup
 	randomizer := number.NewRandomizer()
 	randomNumber := randomizer.UInt32()
@@ -299,7 +299,7 @@ func TestUInt32TypeCheck(t *testing.T) {
 	assert.Equal(t, "uint32", randomNumberType.Name(), "randomized unsigned integer should be of type uint32")
 }
 
-func TestUInt32WithSeed(t *testing.T) {
+func TestUInt32_WithSeed(t *testing.T) {
 	// Setup
 	seed := int64(31 * 41 * 53)
 	randomizer := number.NewRandomizerWithSeed(seed)
@@ -309,7 +309,7 @@ func TestUInt32WithSeed(t *testing.T) {
 	assert.NotEqual(t, 0, randomNumber, "randomized unsigned integer should not be 0")
 }
 
-func TestUInt32InRangeWithSeed(t *testing.T) {
+func TestUInt32InRange_WithSeed(t *testing.T) {
 	// Setup
 	seed := int64(31 * 41 * 53)
 	randomizer := number.NewRandomizerWithSeed(seed)
@@ -322,7 +322,7 @@ func TestUInt32InRangeWithSeed(t *testing.T) {
 	assert.Less(t, randomNumber, max, "randomized unsigned integer should be less than max")
 }
 
-func TestUInt32TypeCheckWithSeed(t *testing.T) {
+func TestUInt32_TypeCheck_WithSeed(t *testing.T) {
 	// Setup
 	seed := int64(31 * 41 * 53)
 	randomizer := number.NewRandomizerWithSeed(seed)
@@ -354,7 +354,7 @@ func TestUInt64InRange(t *testing.T) {
 	assert.Less(t, randomNumber, max, "randomized unsigned integer should be less than max")
 }
 
-func TestUInt64TypeCheck(t *testing.T) {
+func TestUInt64_TypeCheck(t *testing.T) {
 	// Setup
 	randomizer := number.NewRandomizer()
 	randomNumber := randomizer.UInt64()
@@ -364,7 +364,7 @@ func TestUInt64TypeCheck(t *testing.T) {
 	assert.Equal(t, "uint64", randomNumberType.Name(), "randomized unsigned integer should be of type uint64")
 }
 
-func TestUInt64WithSeed(t *testing.T) {
+func TestUInt64_WithSeed(t *testing.T) {
 	// Setup
 	seed := int64(31 * 41 * 53)
 	randomizer := number.NewRandomizerWithSeed(seed)
@@ -374,7 +374,7 @@ func TestUInt64WithSeed(t *testing.T) {
 	assert.NotEqual(t, 0, randomNumber, "randomized unsigned integer should not be 0")
 }
 
-func TestUInt64InRangeWithSeed(t *testing.T) {
+func TestUInt64InRange_WithSeed(t *testing.T) {
 	// Setup
 	seed := int64(31 * 41 * 53)
 	randomizer := number.NewRandomizerWithSeed(seed)
@@ -387,7 +387,7 @@ func TestUInt64InRangeWithSeed(t *testing.T) {
 	assert.Less(t, randomNumber, max, "randomized unsigned integer should be less than max")
 }
 
-func TestUInt64TypeCheckWithSeed(t *testing.T) {
+func TestUInt64_TypeCheck_WithSeed(t *testing.T) {
 	// Setup
 	seed := int64(31 * 41 * 53)
 	randomizer := number.NewRandomizerWithSeed(seed)
@@ -420,7 +420,7 @@ func TestFloat32InRange(t *testing.T) {
 	assert.Less(t, randomNumber, max, "randomized float should be less than max")
 }
 
-func TestFloat32TypeCheck(t *testing.T) {
+func TestFloat32_TypeCheck(t *testing.T) {
 	// Setup
 	randomizer := number.NewRandomizer()
 	randomNumber := randomizer.Float32()
@@ -430,7 +430,7 @@ func TestFloat32TypeCheck(t *testing.T) {
 	assert.Equal(t, "float32", randomNumberType.Name(), "randomized float should be of type float32")
 }
 
-func TestFloat32WithSeed(t *testing.T) {
+func TestFloat32_WithSeed(t *testing.T) {
 	// Setup
 	seed := int64(31 * 41 * 53)
 	randomizer := number.NewRandomizerWithSeed(seed)
@@ -440,7 +440,7 @@ func TestFloat32WithSeed(t *testing.T) {
 	assert.NotEqual(t, 0, randomNumber, "randomized float should not be 0")
 }
 
-func TestFloat32InRangeWithSeed(t *testing.T) {
+func TestFloat32InRange_WithSeed(t *testing.T) {
 	// Setup
 	seed := int64(31 * 41 * 53)
 	randomizer := number.NewRandomizerWithSeed(seed)
@@ -453,7 +453,7 @@ func TestFloat32InRangeWithSeed(t *testing.T) {
 	assert.Less(t, randomNumber, max, "randomized float should be less than max")
 }
 
-func TestFloat32TypeCheckWithSeed(t *testing.T) {
+func TestFloat32_TypeCheck_WithSeed(t *testing.T) {
 	// Setup
 	seed := int64(31 * 41 * 53)
 	randomizer := number.NewRandomizerWithSeed(seed)
@@ -486,7 +486,7 @@ func TestFloat64InRange(t *testing.T) {
 	assert.Less(t, randomNumber, max, "randomized float should be less than max")
 }
 
-func TestFloat64TypeCheck(t *testing.T) {
+func TestFloat64_TypeCheck(t *testing.T) {
 	// Setup
 	randomizer := number.NewRandomizer()
 	randomNumber := randomizer.Float64()
@@ -496,7 +496,7 @@ func TestFloat64TypeCheck(t *testing.T) {
 	assert.Equal(t, "float64", randomNumberType.Name(), "randomized float should be of type float64")
 }
 
-func TestFloat64WithSeed(t *testing.T) {
+func TestFloat64_WithSeed(t *testing.T) {
 	// Setup
 	seed := int64(31 * 41 * 53)
 	randomizer := number.NewRandomizerWithSeed(seed)
@@ -506,7 +506,7 @@ func TestFloat64WithSeed(t *testing.T) {
 	assert.NotEqual(t, 0, randomNumber, "randomized float should not be 0")
 }
 
-func TestFloat64InRangeWithSeed(t *testing.T) {
+func TestFloat64InRange_WithSeed(t *testing.T) {
 	// Setup
 	seed := int64(31 * 41 * 53)
 	randomizer := number.NewRandomizerWithSeed(seed)
@@ -519,7 +519,7 @@ func TestFloat64InRangeWithSeed(t *testing.T) {
 	assert.Less(t, randomNumber, max, "randomized float should be less than max")
 }
 
-func TestFloat64TypeCheckWithSeed(t *testing.T) {
+func TestFloat64_TypeCheck_WithSeed(t *testing.T) {
 	// Setup
 	seed := int64(31 * 41 * 53)
 	randomizer := number.NewRandomizerWithSeed(seed)
